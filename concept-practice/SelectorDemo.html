@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All CSS Selector Demo</title>
+
+    <style>
+        /* Universal Selevtor */
+        *{
+            font-style: italic;
+        }
+
+        /* Desecendant tag selector */
+        div p{
+            background-color: orange;
+        }
+        
+        /* Child Selector */
+        ul > li{
+            list-style-type: square;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            color: brown;
+        }
+
+        /* General sibling Selector
+        h3 ~ p{
+            background-color: aqua;
+        } */
+
+        /* Adjacent Sibling Selector */
+        h3 + p{
+            background-color: bisque;
+        }
+
+        /* Atribute Selector */
+        a[title]{
+            color: aqua;
+        }
+
+        a[href]{
+            color: rgb(128, 0, 13);
+            font-size: 2rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+    </style>
+
+  </head>
+  <body>
+    <!-- Desecendant Selector -->
+    <div>
+      <h1>This is Heading-1</h1>
+      <h1>Thus is heading-2</h1>
+      <p>This is first para</p>
+      <p>This is second para</p>
+      <p>This is third para</p>
+    </div>
+
+    <h1>This is head outsid div</h1>
+    <p>This is para outside div</p>
+
+    <!-- Child Selector -->
+     programming languages :
+     <ul>
+        <li>Java</li>
+        <li>.Net</li>
+        <li>PHP</li>
+        <li>python</li>
+        <li>C++</li>
+     </ul>
+
+     <!-- General Sibling Selector -->
+      <h3>This is simple h3 tag.</h3>
+      <p>This is para-1.</p>
+      <p>This is para-2. Which is inside the the div tag.</p>
+      
+
+      <!-- Adjacent Sibling Selector -->
+       <h3>This is simple h3 heading.</h3>
+       <p>This is simple para tag.</p>
+       <p>This is one simple para tag.</p>
+
+       <!-- Attribute Selector -->
+        <a href="https://www.google.com/">Click here for more info.</a>
+
+  </body>
+</html>
