@@ -1,0 +1,37 @@
+.heading{
+    border: 2px solid black;
+    text-shadow: 5px 5px 5px rgb(148, 196, 78);
+    background-color: rgba(186, 240, 227, 0.907);
+    box-shadow: 2px 2px 2px 5px rgb(148, 196, 78);
+}
+
+body{
+    background-image: url(./Images/logo.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 30px;
+    background-position: center;
+    background-color: transparent;
+}
+
+section{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 2px solidblack;
+    margin: 40px;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(10deg, purple, 20%, plum);
+
+    img{
+        margin:5px;
+        padding:5px;
+        border-radius: 100%;
+        background-color: azure;
+        box-shadow: 0px 0px 5px 3px red;
+        width: 50px;
+        height: 40px;
+    }
+
+}
