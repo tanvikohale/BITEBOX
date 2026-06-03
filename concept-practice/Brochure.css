@@ -1,7 +1,7 @@
 .heading{
     border: 2px solid black;
     text-shadow: 5px 5px 5px rgb(148, 196, 78);
-    background-color: rgba(186, 240, 227, 0.907);
+    background-color: rgba(172, 225, 213, 0.907);
     box-shadow: 2px 2px 2px 5px rgb(148, 196, 78);
 }
 
@@ -16,6 +16,7 @@ body{
 
 section{
     display: inline-block;
+    position: relative;
     width: 300px;
     height: 300px;
     border: 2px solidblack;
@@ -34,4 +35,15 @@ section{
         height: 40px;
     }
 
+}
+
+.new{
+    position: absolute;
+    background-color: red;
+    width: 20px;
+    height: 30px;
+    top: 0;
+    left: 270px;
+    border-radius: 0 0 0 30px;
+    padding: 10px 15px;
 }
