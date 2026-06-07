@@ -1,11 +1,57 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+    padding: 5px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+}
+
+nav a:hover{
+  color: red;
+}
+
+#login-button{
+  background-color: red;
+  padding: 6px 12px;
+  border-radius: 5px;
+  color: white;
+}
+/* Hero Section */
+.hero-section{
+  height: 90vh;
+  background: url(./Images/banner-3.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.hero-content{
+  color: white;
+  margin-top: 150px;
+  text-align: center;
+}
+#btn-ordernow{
+  background-color: red;
+  border-radius: 5px;
+  padding: 6px;
+  color: white;
+  margin-top: 10px;
+}
+
+
