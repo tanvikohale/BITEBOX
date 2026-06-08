@@ -1,11 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Page</title>
-</head>
-<body>
-    <h3>This is Menu page.</h3>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menus</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/8553b64424.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./Menu.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <!-- This is logo section -->
+          <!-- <h2>Bite<span style="color: red">Box</span></h2> -->
+          <img src="./Images/logo_bb.png" width="150px" height="60px" alt="" />
+        </div>
+        <!-- Menu -->
+        <ul type="none">
+          <li><a href="./index.html" target="_blank">Home</a></li>
+          <li><a href="./Menu.html" target="_blank">Menu</a></li>
+          <li><a href="./bitedeals.html" target="_blank">Bite Deals</a></li>
+          <li>
+            <a href="./Cart.html" target="_blank">
+              <i class="fa-solid fa-cart-plus"></i> Cart
+            </a>
+          </li>
+          <li>
+            <a href="./Login.html" target="_blank"
+              ><button id="login-button">
+                <i class="fa-solid fa-right-to-bracket"></i> Login
+              </button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Icon-Filter Section Starts Here -->
+    <div class="category-icons">
+      <div class="icon-box">
+        <img src="./Images/Burger.jpg" alt="all-menus" />
+        <p>All</p>
+      </div>
+
+      <div class="icon-box">
+        <img src="./Images/Burger.jpg" alt="all-menus" />
+        <p>All</p>
+      </div>
+
+      <div class="icon-box">
+        <img src="./Images/Burger.jpg" alt="all-menus" />
+        <p>All</p>
+      </div>
+
+      <div class="icon-box">
+        <img src="./Images/Burger.jpg" alt="all-menus" />
+        <p>All</p>
+      </div>
+
+      <div class="icon-box">
+        <img src="./Images/Burger.jpg" alt="all-menus" />
+        <p>All</p>
+      </div>
+
+      <div class="icon-box">
+        <img src="./Images/Burger.jpg" alt="all-menus" />
+        <p>All</p>
+      </div>
+
+      <div class="icon-box">
+        <img src="./Images/Burger.jpg" alt="all-menus" />
+        <p>All</p>
+      </div>
+    </div>
+    <!-- Icon-Filter Section Ends Here -->
+
+    <!-- Menu Section Start Here -->
+    <section class="menu">
+      <!-- <h2>Our Menus</h2> -->
+      <div class="menu-container">
+        <div class="card">
+          <img src="./Images/Burger.jpg" alt="Burger" />
+          <h2>Burger</h2>
+          <p>Cheesy Burger</p>
+          <span>₹189</span>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="./Images/onion_pizza.jpg" alt="Burger" />
+          <h2>Onion Pizza</h2>
+          <p>Cheesy Onion Pizza</p>
+          <span>₹169</span>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="./Images/capsicum_pizza.avif" alt="Burger" />
+          <h2>Capsicum Pizza</h2>
+          <p>Cheesy Capsicum Pizza</p>
+          <span>₹199</span>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="./Images/Noodles.jpg" alt="Burger" />
+          <h2>Noodles</h2>
+          <p>Spicy Noodles</p>
+          <span>₹299</span>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="./Images/Manchurian.jpg" alt="Burger" />
+          <h2>Manchurian</h2>
+          <p>Veg Manchurian</p>
+          <span>₹150</span>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="./Images/Red-Sause-Pasta.jpg" alt="Burger" />
+          <h2>Pasta</h2>
+          <p>Red Sauce Pasta</p>
+          <span>₹169</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section End Here -->
+  </body>
 </html>
