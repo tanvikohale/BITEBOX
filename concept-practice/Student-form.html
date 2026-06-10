@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="./Succes.html" method="get">
+        First Name : <input type="text" id="fn" required placeholder="Enter Your First Name"><br><br>
+        Last Name : <input type="text" id="ln" required placeholder="Enter Your Last Name"><br><br>
+        City :
+        <select name="city" id="city">
+            <option>Select Your City</option>
+            <option>Nagpur</option>
+            <option>Nashik</option>
+            <option>Amravati</option>
+            <option>Pune</option>
+            <option>Mumbai</option>
+        </select><br><br>
+        Roll No : <input type="number" id="rollno" required><br><br>
+        DOB : <input type="date" id="dob"><br><br>
+        Email Id : <input type="email" id="email" required><br><br>
+        Mobile No : <input type="number" id="mobno" required><br><br>
+        Admission Date : <input type="date" id="admissiondate" required><br><br>
+        Subjects : 
+        Java 8 <input type="checkbox" id="sub1">
+        Html-CSS <input type="checkbox" id="sub2">
+        React <input type="checkbox" id="sub3">
+        MySQL <input type="checkbox" id="sub4">
+        Python <input type="checkbox" id="sub5">
+        SpringBoot <input type="checkbox" id="sub6"><br><br>
+        Gender :
+        <input type="radio" name="gender" id="gender" value="female"> Female
+        <input type="radio" name="gender" id="gender" value="male"> Male
+        <input type="radio" name="gender" id="gender" value="other"> Other <br><br>
+        Password : <input type="password" id="password"><br><br>
+        Feedback : <textarea name="feedback" id="feedback" rows="2" cols="10"></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
