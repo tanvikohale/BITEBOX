@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,7 +12,7 @@
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./index.css" />
   </head>
-<body>
+  <body>
     <header>
       <nav>
         <div>
@@ -31,27 +31,27 @@
             </a>
           </li>
           <li>
-            <a href="./Login.html" target="_blank"><button id="login-button">
-              <i class="fa-solid fa-right-to-bracket"></i> Login</button>
+            <a href="./Login.html" target="_blank"
+              ><button id="login-button">
+                <i class="fa-solid fa-right-to-bracket"></i> Login
+              </button>
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <!-- Login Form -->
-     <section class="auth-container">
+    <section class="auth-container">
       <div class="auth-box">
+        <h2>Create Account</h2>
         <form action="">
-          <h2>Login to Bite<span>Box</span></h2>
-          <input type="email" placeholder="Enter Email" required >
-          <input type="password" placeholder="Enter password" required>
-          <button>LogIn</button>
-          <p><a href="./Sign-Up.html">Forget Password</a></p>
-          <p>Don't have an accout
-            <a href="./Sign-Up.html">SignUp</a>
-          </p>
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="password" required />
+          <input type="password" placeholder="Confirm-Password" required />
+          <button type="submit">SignUp</button>
         </form>
+        <p>Already have an account ?<a href="Login.html">Login</a></p>
       </div>
-     </section>
-</body>
+    </section>
+  </body>
 </html>
