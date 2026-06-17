@@ -1,18 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo for  get elements by its ID</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo for get elements by its ID</title>
+  </head>
+  <body>
+    <p id="para">This is a simple paragraph tag.</p>
+    username : <input type="text" id="uname" required onkeypress="keyup()" onkeyup="keyup()" />
+    
 
     <script>
-        let user = document.getElementById("uname");
-        document.write("<h3> Wellcome User </h3>" +user.value)
-        console.log(user.value);
+      let user = document.getElementById("uname");
+
+      let p_ele = document.getElementById("para");
+      function keyup(){
+        p_ele.style.color = "blue";
+        // let user_name = user.value;
+        // document.write("Welcome User " + user_name);
+      }
     </script>
-    
-</head>
-<body>
-    username : <input type="text" id="uname" required>
-</body>
+  </body>
 </html>
