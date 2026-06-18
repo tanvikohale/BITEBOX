@@ -9,13 +9,6 @@ console.log("After post increament value = " +addition(7));
 
 
 
-
-
-
-
-
-
-
 // Addition
 function addNumbers(a,b)
 {
@@ -97,3 +90,9 @@ function canVote(age)
     }
 }
 console.log(canVote(19));
+
+
+
+// Example of an Arrow Function.
+// const sub = (a,b) => a-b;
+// console.log("substraction = "+sub(10,20));
