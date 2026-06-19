@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission using Javascript</title>
+    <style>
+        div{
+            width: 250px;
+            margin: 10px;
+            padding: 10px;
+            background-color: antiquewhite;
+        }
+        input{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for=""><h2>First Name</h2></label>
+        <input type="text" id="firstname">
+        <label for=""><h2>Last Name</h2></label>
+        <input type="text" id="lastname">
+        <br><br>
+        <button onclick="submitData()">Submit</button>
+    </div>
+
+    <!-- Script Part -->
+     <script>
+        function submitData(){
+            let firstName = document.getElementById("firstname").value;
+            let lastName = document.getElementById("lastname").value;
+
+            console.log("First Name : " ,firstName);
+            console.log("Last Name : ", lastName)
+        }
+     </script>
+</body>
+</html>
