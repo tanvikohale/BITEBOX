@@ -43,15 +43,18 @@
       <div class="auth-box">
         <form action="">
           <h2>Login to Bite<span>Box</span></h2>
-          <input type="email" placeholder="Enter Email" required>
-          <input type="password" placeholder="Enter password" required>
-          <button>LogIn</button>
+          <input type="email" id="email" placeholder="Enter Email" required>
+          <input type="password" id="password" placeholder="Enter password" required>
+          <button type="button" onclick="login()">LogIn</button>
           <p><a href="./Sign-Up.html">Forget Password</a></p>
           <p>Don't have an accout
             <a href="./Sign-Up.html">SignUp</a>
           </p>
+          <p id="error" style="color: red;"></p>
         </form>
       </div>
     </section>
+
+    <script src="./JS/Scripts.js"></script>
 </body>
 </html>
