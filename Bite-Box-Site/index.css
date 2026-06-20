@@ -6,7 +6,7 @@
 }
 
 nav {
-    padding: 5px;
+  padding: 5px;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -33,6 +33,7 @@ nav a:hover{
   border-radius: 5px;
   color: white;
 }
+
 /* Hero Section */
 .hero-section{
   height: 90vh;
@@ -118,4 +119,52 @@ nav a:hover{
 .auth-box a{
   color: red;
   text-decoration: none;
+}
+
+
+/* FOOTER STYLE */
+
+footer ul{
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+
+footer{
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+}
+
+.footer-box h3{
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-box span{
+  color: red;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons a:hover{
+  background: red;
+  color: aliceblue;
+}
+
+.footer-bottom{
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid rgb(88, 79, 79);
+  font-size: 14px;
 }
