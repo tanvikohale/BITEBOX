@@ -15,6 +15,7 @@ function login(){
         error.innerHTML = "Inavlid email or password!!";
     }
 }
+
 function showPass(){
     let password = document.getElementById("password");
 
@@ -23,4 +24,21 @@ function showPass(){
     }else{
         password.type="password";
     }
+}
+
+// Function for Menu Icon toggler
+function toggleMenu() {
+
+    let menu = document.getElementById("navmenu");
+    let icon = document.getElementById("menuicon");
+
+    if (menu.style.display==="none" || menu.style.display==="") 
+    {
+        menu.style.display = "flex";
+        icon.className="fa-solid fa-xmark"
+    } else {
+        menu.style.display = "none";
+        icon.className="fa-solid fa-bars";
+    }
+
 }
