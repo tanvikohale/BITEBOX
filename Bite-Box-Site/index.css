@@ -184,30 +184,22 @@ footer a{
 
 /* Css For Responsive design */
 
-@media(max-width:768px){
+/* || MOBILE SCREEN ||*/
 
-  .menu-btn.active{
-    display: block;
-  }
+@media screen and (max-width: 480px) {
+
+  /* Home Page */
   header{
     position: sticky;
     top: 0;
     z-index: 1000;
     background: black;
   }
-  
-  .navmenu{
-    display: none;
-  }
 
-  .navmenu.active{
-    display: flex;
+  nav{
     flex-direction: column;
-  }
-
-  /* nav{
-    flex-direction: column;
-    padding: 15px 20px;
+    align-items: center;
+    padding: 15px;
     gap: 15px;
   }
 
@@ -219,7 +211,7 @@ footer a{
     flex-direction: column;
     width: 100%;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
   }
 
   nav ul li{
@@ -231,9 +223,13 @@ footer a{
     display: block;
     width: 100%;
     padding: 10px;
-    border-bottom: 1px solid rgb(57, 53, 53);
-  } */
+    border-bottom: 1px solid #444;
+  }
 
+  nav li:last-child a{
+    width: 90%;
+    margin: auto;
+  }
 
   .hero-content{
     height: 70vh;
@@ -241,47 +237,186 @@ footer a{
     padding: 20px;
   }
 
- .hero-content h1{
-  font-size: 22px;
- } 
+  .hero-content h1{
+    font-size: 22px;
+  }
 
- .hero-content p{
-  font-size: 15px;
- }
+  .hero-content p{
+    font-size: 15px;
+  }
 
- .menu-container{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
- }
+  /* Menu page and Bitedeals also  */
+  .menu-container,
+  .combo-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
- .combo-container{
-  display: grid !important;
-  grid-template-columns: repeat(1, 1fr);
-  margin-top: 10px;
-  gap: 20px;
- }
+  .category-icons{
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 15px;
+    gap: 10px;
+  }
 
- .category-icons{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  padding: 15px;
- }
+  .icon-box{
+    min-width: 70px;
+  }
 
- .icon-box{
-  min-width: 70px;
- }
+  /* Bitedeals Page */
+  .deals-hero{
+    padding: 10px;
+    margin: 0;
+  }
 
- .deals-hero{
-  padding: 5px;
-  margin: 0;
- }
+  /* Cart Page */
+    .cart{
+    overflow-x: auto;
+    padding: 10px;
+  }
 
- .footer-container{
-  grid-template-columns: repeat(2,1fr);
-  text-align: center;
-  font-size: 10px;
- }
+  .cart table{
+    width: 100%;
+    min-width: 600px;
+    font-size: 12px;
+  }
 
+  .item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .item img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .item h4{
+    font-size: 12px;
+  }
+
+  .item p{
+    font-size: 10px;
+  }
+
+  .quantity-box button{
+    padding: 2px 6px;
+  }
+
+  .quantity-box span{
+    font-size: 12px;
+  }
+
+  .remove{
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .grand_total td{
+    font-size: 12px;
+  }
+
+  .grand_total button{
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  /* Footer Page */
+  .footer-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 15px;
+    font-size: 12px;
+  }
+}
+
+/* || TABLET SCREEN || */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: black;
+  }
+
+  nav{
+    padding: 15px 25px;
+    gap: 15px;
+  }
+
+  nav img{
+    width: 160px;
+  }
+
+  nav ul{
+    gap: 15px;
+  }
+
+  nav ul li a{
+    font-size: 14px;
+  }
+
+  .hero-content{
+    height: 80vh;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .hero-content h1{
+    font-size: 32px;
+  }
+
+  .hero-content p{
+    font-size: 18px;
+  }
+
+  .menu-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .combo-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .category-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .icon-box{
+    min-width: 80px;
+  }
+
+  .deals-hero{
+    padding: 20px;
+    margin: 0;
+  }
+
+  .footer-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+  }
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu-container,
+  .combo-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

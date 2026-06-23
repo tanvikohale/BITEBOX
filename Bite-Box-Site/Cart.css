@@ -100,3 +100,30 @@ tbody tr{
 .cart{
     height: 100vh;
 }
+
+.cart table{
+    animation: slideRightToLeft 1s ease;
+}
+
+@keyframes slideRightToLeft{
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.quantity-box button,
+.remove,
+.grand_total button{
+    transition: 0.3s;
+}
+
+.quantity-box button:hover,
+.remove:hover,
+.grand_total button:hover{
+    transform: scale(1.1);
+}

@@ -28,17 +28,11 @@ function showPass(){
 
 // Function for Menu Icon toggler
 function toggleMenu() {
-
     let menu = document.getElementById("navmenu");
-    let icon = document.getElementById("menuicon");
 
-    if (menu.style.display==="none" || menu.style.display==="") 
-    {
-        menu.style.display = "flex";
-        icon.className="fa-solid fa-xmark"
+    if (menu.classList.contains("show")) {
+        menu.classList.remove("show");
     } else {
-        menu.style.display = "none";
-        icon.className="fa-solid fa-bars";
+        menu.classList.add("show");
     }
-
 }
