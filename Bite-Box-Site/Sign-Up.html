@@ -20,8 +20,14 @@
           <!-- <h2>Bite<span style="color: red">Box</span></h2> -->
           <img src="./Images/logo_bb.png" width="150px" height="60px" alt="" />
         </div>
+  
+        </div>
+        <!-- Toggle Button -->
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
         <!-- Menu -->
-        <ul type="none">
+        <ul id="nav-links" class="nav-links">
           <li><a href="./index.html" target="_blank">Home</a></li>
           <li><a href="./Menu.html" target="_blank">Menu</a></li>
           <li><a href="./bitedeals.html" target="_blank">Bite Deals</a></li>
@@ -31,10 +37,8 @@
             </a>
           </li>
           <li>
-            <a href="./Login.html" target="_blank"
-              ><button id="login-button">
-                <i class="fa-solid fa-right-to-bracket"></i> Login
-              </button>
+            <a href="./Login.html" target="_blank"><button id="login-button">
+                <i class="fa-solid fa-right-to-bracket"></i> Login</button>
             </a>
           </li>
         </ul>
@@ -44,11 +48,22 @@
       <div class="auth-box">
         <h2>Create Account</h2>
         <form action="">
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="password" required />
-          <input type="password" placeholder="Confirm-Password" required />
-          <button type="submit">SignUp</button>
+          <input type="text" id="name" placeholder="Full Name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <div style="position: relative;">
+            <input type="password" id="password" placeholder="Enter password" required>
+            <span onclick="showPass()"
+              style="position: absolute; right: 10px; top: 30px; transform: translateY(-50%); cursor: pointer;">
+              <i class="fa-solid fa-eye"></i></span>
+          </div>
+          <div style="position: relative;">
+            <input type="password" id="confirmpassword" placeholder="Confirm-Password" required />
+            <span onclick="showconfPass()"
+              style="position: absolute; right: 10px; top: 30px; transform: translateY(-50%); cursor: pointer;">
+              <i class="fa-solid fa-eye"></i></span>
+          </div>
+          <button type="button" onclick="signUp()">SignUp</button>
+          <p id="error" style="color: red;"></p>
         </form>
         <p>Already have an account ?<a href="Login.html">Login</a></p>
       </div>

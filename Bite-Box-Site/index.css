@@ -6,11 +6,11 @@
 }
 
 nav {
-  padding: 5px;
   background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: whitesmoke;
 }
 ul {
   display: flex;
@@ -170,14 +170,52 @@ footer a{
 }
 
 
-/* Menu Button Css */
-.menu-btn{
-  display: none;
-  font-size: 22px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
+/* Toggle Menu CSS */
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li a:hover {
+    color: red;
+}
+
+#login-button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+/* Toggle Button */
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -188,6 +226,40 @@ footer a{
 
 @media screen and (max-width: 480px) {
 
+  .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        text-align: center;
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 12px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+
   /* Home Page */
   header{
     position: sticky;
@@ -196,7 +268,8 @@ footer a{
     background: black;
   }
 
-  nav{
+  
+  /* nav{
     flex-direction: column;
     align-items: center;
     padding: 15px;
@@ -243,7 +316,7 @@ footer a{
 
   .hero-content p{
     font-size: 15px;
-  }
+  } */
 
   /* Menu page and Bitedeals also  */
   .menu-container,
@@ -336,6 +409,40 @@ footer a{
 /* || TABLET SCREEN || */
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+
+  .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        text-align: center;
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 12px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
 
   header{
     position: sticky;

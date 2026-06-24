@@ -8,7 +8,7 @@
 }
 
 .card:hover{
-   transform:scale(1.05);
+   transform:scale(1.03);
 }
 
 .card img{
@@ -16,11 +16,12 @@
     object-fit: cover;
     height: 250px;
     transition: transform 0.3s ease;
+    border-radius: 10px;
 
 }
 
 .card:hover img{
-    transform: scale(1.06);
+    transform: scale(1.05);
 }
 
 .card button{

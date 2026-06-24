@@ -16,6 +16,24 @@ function login(){
     }
 }
 
+function signUp(){
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let confirmpassword = document.getElementById("confirmpassword").value;
+    let error = document.getElementById("error");
+
+    if(password === confirmpassword){
+        localStorage.setItem("password" , password);
+        localStorage.setItem("confirmpassword", confirmpassword);
+
+        window.location.href = "Login.html";
+    }else{
+        error.innerHTML = "Invalid Passwors you entered";
+    }
+}
+
+// Function For Show password or hide
 function showPass(){
     let password = document.getElementById("password");
 
@@ -26,13 +44,35 @@ function showPass(){
     }
 }
 
-// Function for Menu Icon toggler
-function toggleMenu() {
-    let menu = document.getElementById("navmenu");
+function showconfPass(){
+    let password = document.getElementById("confirmpassword");
 
-    if (menu.classList.contains("show")) {
-        menu.classList.remove("show");
-    } else {
-        menu.classList.add("show");
+    if(password.type==="password"){
+        password.type="text";
+    }else{
+        password.type="password";
     }
 }
+
+// Function for Menu Icon toggler
+// function toggleMenu() {
+//     let menu = document.getElementById("navmenu");
+//     let icon = document.getElementById("menuIcon");
+
+//     if (menu.classList.contains("show")) {
+//         menu.classList.remove("show");
+//         icon.classList.remove("fa-xmark");
+//         icon.classList.add("fa-bars");
+//     } else {
+//         menu.classList.add("show");
+//         icon.classList.remove("fa-bars");
+//         icon.classList.add("fa-xmark");
+//     }
+// }
+
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
