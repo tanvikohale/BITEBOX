@@ -76,3 +76,20 @@ const navLinks = document.getElementById("nav-links");
 menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
+
+
+
+// Function for filter
+
+document.getElementById("allbtn").onclick = showAll;
+
+function showAll() {
+    document.getElementById("menucards").style.display = "flex";
+}
+
+document.getElementById("burgerBtn").onclick = showBurger;
+function showBurger() {
+    document.getElementById("burgerCard").style.display = "block";
+    document.getElementById("pizzaCard1").style.display = "none";
+    document.getElementById("pizzaCard2").style.display = "none";
+}
