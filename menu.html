@@ -3,188 +3,327 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menus</title>
+    <title>Menu | BiteBox</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
     </style>
     <script
       src="https://kit.fontawesome.com/8553b64424.js"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./Menu.css" />
-     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    
     <header>
       <nav>
-        <div>
-          <!-- This is logo section -->
-          <!-- <h2>Bite<span style="color: red">Box</span></h2> -->
-          <img src="./Images/logo_bb.png" width="150px" height="60px" alt="" />
+        <div class="logo">
+          <a href="./index.html"
+            ><img
+              src="./Images/logo_bb.png"
+              width="150"
+              height="60"
+              alt="BiteBox Logo"
+          /></a>
         </div>
-  
-        </div>
-        <!-- Toggle Button -->
         <div class="menu-toggle" id="menu-toggle">
           <i class="fa-solid fa-bars"></i>
         </div>
-        <!-- Menu -->
         <ul id="nav-links" class="nav-links">
-          <li><a href="./index.html" target="_blank">Home</a></li>
-          <li><a href="./Menu.html" target="_blank">Menu</a></li>
-          <li><a href="./bitedeals.html" target="_blank">Bite Deals</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Menu.html">Menu</a></li>
+          <li><a href="./bitedeals.html">Bite Deals</a></li>
           <li>
-            <a href="./Cart.html" target="_blank">
-              <i class="fa-solid fa-cart-plus"></i> Cart
-            </a>
+            <a href="./Cart.html"><i class="fa-solid fa-cart-plus"></i> Cart</a>
           </li>
           <li>
-            <a href="./Login.html" target="_blank"><button id="login-button">
-                <i class="fa-solid fa-right-to-bracket"></i> Login</button>
-            </a>
+            <a href="./Login.html"
+              ><button id="login-button">
+                <i class="fa-solid fa-right-to-bracket"></i> Login
+              </button></a
+            >
           </li>
         </ul>
       </nav>
     </header>
 
-    <!-- Icon-Filter Section Starts Here -->
-    <div class="category-icons">
-      <div class="icon-box">
-        <img src="./Images/All-menu.jpg" alt="all-menus" />
-        <p>All</p>
-      </div>
 
-      <div class="icon-box">
-        <img src="./Images/Burger.jpg" alt="all-menus" />
-        <p>Burger</p>
-      </div>
-
-      <div class="icon-box">
-        <img src="./Images/Golden-corn.jpg" alt="all-menus" />
-        <p>Pizza</p>
-      </div>
-
-      <div class="icon-box">
-        <img src="./Images/Noodles.jpg" alt="all-menus" />
-        <p>Noodles</p>
-      </div>
-
-      <div class="icon-box">
-        <img src="./Images/Manchurian.jpg" alt="all-menus" />
-        <p>Manchurian</p>
-      </div>
-
-      <div class="icon-box">
-        <img src="./Images/Red-Sause-Pasta.jpg" alt="all-menus" />
-        <p>Pasta</p>
-      </div> 
-
-      <div class="icon-box">
-        <img src="./Images/coffee.jpg" alt="all-menus" />
-        <p>Coffee</p>
-      </div> 
-    </div>
-    <!-- Icon-Filter Section Ends Here -->
-
-    <!-- Menu Section Start Here -->
-    <section class="menu">
-      <!-- <h2>Our Menus</h2> -->
-      <div class="menu-container">
-        <div class="card">
-          <img src="./Images/Burger.jpg" alt="Burger" />
-          <h2>Burger</h2>
-          <p>Cheesy Burger</p>
-          <span>₹189</span>
-          <button>Add to Cart</button>
+    <!-- Main Section -->
+    <main class="menu-page">
+      <section class="menu-hero">
+        <div class="menu-hero-content">
+          <span class="menu-tag"
+            ><i class="fa-solid fa-utensils"></i> FRESH, TASTY & MADE FOR
+            YOU</span>
+          <h1>Discover Your <span>Favorite Food</span></h1>
+          <p>
+            From cheesy pizzas to delicious burgers, find your cravings and make
+            every bite special.
+          </p>
+          <div class="menu-search-note">
+            <i class="fa-solid fa-heart"></i> Good food, great mood!
+          </div>
         </div>
-
-        <div class="card">
-          <img src="./Images/Golden-corn.jpg" alt="corn-pizza" />
-          <h2>Onion Pizza</h2>
-          <p>Cheesy Onion Pizza</p>
-          <span>₹169</span>
-          <button>Add to Cart</button>
+        <div class="menu-hero-image">
+          <img src="./Images/Golden-corn.jpg" alt="Delicious pizza" />
+          <div class="menu-image-badge">
+            <i class="fa-solid fa-fire"></i> Fresh & Tasty
+          </div>
         </div>
-
-        <div class="card">
-          <img src="./Images/capsicum_pizza.avif" alt="capsicum-pizza" />
-          <h2>Capsicum Pizza</h2>
-          <p>Cheesy Capsicum Pizza</p>
-          <span>₹199</span>
-          <button>Add to Cart</button>
+      </section>
+      <section class="menu-content">
+        <div class="menu-heading">
+          <div>
+            <span class="menu-subtitle">EXPLORE OUR COLLECTION</span>
+            <h2>Our <span>Menu</span></h2>
+            <p>Something delicious for every craving.</p>
+          </div>
+          <div class="menu-heading-icon">
+            <i class="fa-solid fa-burger"></i>
+          </div>
         </div>
-
-        <div class="card">
-          <img src="./Images/Noodles.jpg" alt="noodles" />
-          <h2>Noodles</h2>
-          <p>Spicy Noodles</p>
-          <span>₹299</span>
-          <button>Add to Cart</button>
+        <!-- Food Category Filters -->
+        <div class="category-icons">
+          <div class="icon-box active" data-category="all">
+            <img src="./Images/All-menu.jpg" alt="All food" />
+            <p>All</p>
+          </div>
+          <div class="icon-box" data-category="burger">
+            <img src="./Images/Burger.jpg" alt="Burger" />
+            <p>Burger</p>
+          </div>
+          <div class="icon-box" data-category="pizza">
+            <img src="./Images/Golden-corn.jpg" alt="Pizza" />
+            <p>Pizza</p>
+          </div>
+          <div class="icon-box" data-category="noodles">
+            <img src="./Images/Noodles.jpg" alt="Noodles" />
+            <p>Noodles</p>
+          </div>
+          <div class="icon-box" data-category="manchurian">
+            <img src="./Images/Manchurian.jpg" alt="Manchurian" />
+            <p>Manchurian</p>
+          </div>
+          <div class="icon-box" data-category="pasta">
+            <img src="./Images/Red-Sause-Pasta.jpg" alt="Pasta" />
+            <p>Pasta</p>
+          </div>
+          <div class="icon-box" data-category="coffee">
+            <img src="./Images/coffee.jpg" alt="Coffee" />
+            <p>Coffee</p>
+          </div>
         </div>
-
-        <div class="card">
-          <img src="./Images/Manchurian.jpg" alt="manchurian" />
-          <h2>Manchurian</h2>
-          <p>Veg Manchurian</p>
-          <span>₹150</span>
-          <button>Add to Cart</button>
+        <!-- Food Cards -->
+        <div class="menu-container">
+          <div class="card" data-category="burger">
+            <div class="card-image">
+              <img src="./Images/Burger.jpg" alt="Burger" /><span
+                class="food-label"
+                >Popular</span>
+            </div>
+            <div class="card-details">
+              <div class="food-type">
+                <i class="fa-solid fa-star"></i> Customer Favourite
+              </div>
+              <h2>Burger</h2>
+              <p>Cheesy Burger</p>
+              <div class="card-bottom">
+                <span class="price">₹189</span
+                ><button type="button" class="add-cart">
+                  <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="pizza">
+            <div class="card-image">
+              <img src="./Images/Golden-corn.jpg" alt="Onion Pizza" /><span
+                class="food-label">Bestseller</span>
+            </div>
+            <div class="card-details">
+              <div class="food-type">
+                <i class="fa-solid fa-star"></i> Cheesy Goodness
+              </div>
+              <h2>Onion Pizza</h2>
+              <p>Cheesy Onion Pizza</p>
+              <div class="card-bottom">
+                <span class="price">₹169</span
+                ><button type="button" class="add-cart">
+                  <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="pizza">
+            <div class="card-image">
+              <img src="./Images/capsicum_pizza.avif" alt="Capsicum Pizza" />
+            </div>
+            <div class="card-details">
+              <div class="food-type">
+                <i class="fa-solid fa-star"></i> Freshly Baked
+              </div>
+              <h2>Capsicum Pizza</h2>
+              <p>Cheesy Capsicum Pizza</p>
+              <div class="card-bottom">
+                <span class="price">₹199</span
+                ><button type="button" class="add-cart">
+                  <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="noodles">
+            <div class="card-image">
+              <img src="./Images/Noodles.jpg" alt="Noodles" /><span
+                class="food-label"
+                >Spicy Pick</span
+              >
+            </div>
+            <div class="card-details">
+              <div class="food-type">
+                <i class="fa-solid fa-pepper-hot"></i> Spicy Favourite
+              </div>
+              <h2>Noodles</h2>
+              <p>Spicy Noodles</p>
+              <div class="card-bottom">
+                <span class="price">₹299</span
+                ><button type="button" class="add-cart">
+                  <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="manchurian">
+            <div class="card-image">
+              <img src="./Images/Manchurian.jpg" alt="Manchurian" />
+            </div>
+            <div class="card-details">
+              <div class="food-type">
+                <i class="fa-solid fa-star"></i> Desi Favourite
+              </div>
+              <h2>Manchurian</h2>
+              <p>Veg Manchurian</p>
+              <div class="card-bottom">
+                <span class="price">₹150</span
+                ><button type="button" class="add-cart">
+                  <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="pasta">
+            <div class="card-image">
+              <img
+                src="./Images/Red-Sause-Pasta.jpg"
+                alt="Red Sauce Pasta"
+              /><span class="food-label">Must Try</span>
+            </div>
+            <div class="card-details">
+              <div class="food-type">
+                <i class="fa-solid fa-star"></i> Italian Favourite
+              </div>
+              <h2>Pasta</h2>
+              <p>Red Sauce Pasta</p>
+              <div class="card-bottom">
+                <span class="price">₹169</span
+                ><button type="button" class="add-cart">
+                  <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="coffee">
+            <div class="card-image">
+              <img src="./Images/coffee.jpg" alt="Coffee" />
+            </div>
+            <div class="card-details">
+              <div class="food-type">
+                <i class="fa-solid fa-mug-hot"></i> Coffee Time
+              </div>
+              <h2>Coffee</h2>
+              <p>Hot Coffee</p>
+              <div class="card-bottom">
+                <span class="price">₹90</span
+                ><button type="button" class="add-cart">
+                  <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="card">
-          <img src="./Images/Red-Sause-Pasta.jpg" alt="pasta" />
-          <h2>Pasta</h2>
-          <p>Red Sauce Pasta</p>
-          <span>₹169</span>
-          <button>Add to Cart</button>
+        <div class="menu-empty" id="menu-empty">
+          No items found in this category.
         </div>
+      </section>
+    </main>
 
-        <div class="card">
-          <img src="./Images/coffee.jpg" alt="coffee" />
-          <h2>Coffee</h2>
-          <p>Hot Coffee</p>
-          <span>₹90</span>
-          <button>Add to Cart</button>
-        </div>
-      </div>
-    </section>
-    <!-- Menu Section End Here -->
 
-        <footer>
+    <!-- Footer Main Section -->
+    <footer>
       <div class="footer-container">
         <div class="footer-box">
           <h2>Bite<span>Box</span></h2>
-          <p>Delicious food delivered to your doorsteps, Fresh, Fast and Tasty!!</p>
+          <p>
+            Delicious food delivered to your doorstep. Fresh, fast and tasty!
+          </p>
         </div>
         <div class="footer-box">
           <h3>Quick Links</h3>
-          <ul type="none">
-          <li><a href="./index.html" target="_blank">Home</a></li>
-          <li><a href="./Menu.html" target="_blank">Menu</a></li>
-          <li><a href="./bitedeals.html" target="_blank">Bite Deals</a></li>
-          <li><a href="./Cart.html" target="_blank"> Cart</a></li>
-          <li><a href="./Login.html" target="_blank">Login</a></li>
-        </ul>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Menu.html">Menu</a></li>
+            <li><a href="./bitedeals.html">Bite Deals</a></li>
+            <li><a href="./Cart.html">Cart</a></li>
+            <li><a href="./Login.html">Login</a></li>
+          </ul>
         </div>
         <div class="footer-box">
-          <h3>Contact us</h3>
-          <p>Email : support@bitebox.com</p>
-          <p>Phone : +91 9876554326</p>
+          <h3>Contact Us</h3>
+          <p><i class="fa-solid fa-envelope"></i> Email: support@bitebox.com</p>
+          <p><i class="fa-solid fa-phone"></i> Phone: +91 9876554326</p>
         </div>
         <div class="footer-box">
-          <h3>Follow us</h3>
+          <h3>Follow Us</h3>
           <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <br>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <br>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" aria-label="WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
           </div>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <p>&copy;Copyright : Soniya Kohale 2026 | BiteBox | All Rights Reserved</p>
+        <p>
+          &copy; Copyright : Soniya Kohale 2026 | BiteBox | All Rights Reserved
+        </p>
       </div>
     </footer>
-      <script src="./JS/Scripts.js"></script>
+    <script src="./JS/Scripts.js"></script>
+    <script>
+      const categoryBoxes = document.querySelectorAll(".icon-box");
+      const foodCards = document.querySelectorAll(".card");
+      const emptyMessage = document.getElementById("menu-empty");
+      categoryBoxes.forEach((box) => {
+        box.addEventListener("click", () => {
+          const category = box.dataset.category;
+          categoryBoxes.forEach((item) => item.classList.remove("active"));
+          box.classList.add("active");
+          let visibleCount = 0;
+          foodCards.forEach((card) => {
+            const show =
+              category === "all" || card.dataset.category === category;
+            card.style.display = show ? "" : "none";
+            if (show) visibleCount++;
+          });
+          emptyMessage.style.display = visibleCount === 0 ? "block" : "none";
+        });
+      });
+    </script>
   </body>
 </html>

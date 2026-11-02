@@ -1,98 +1,191 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+  <title>BiteBox | Delicious Food Delivered Fast</title>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
   </style>
-  <script src="https://kit.fontawesome.com/8553b64424.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8553b64424.js"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./index.css" />
 </head>
-
 <body>
+  <!-- Header -->
   <header>
     <nav>
-      <div>
-        <!-- This is logo section -->
-        <!-- <h2>Bite<span style="color: red">Box</span></h2> -->
-        <img src="./Images/logo_bb.png" width="150px" height="60px" alt="" />
+      <!-- Logo -->
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./Images/logo_bb.png" width="10" height="80" alt="BiteBox Logo" />
+        </a>
       </div>
-
-      </div>
-      <!-- Toggle Button -->
+      <!-- Mobile Toggle Button -->
       <div class="menu-toggle" id="menu-toggle">
         <i class="fa-solid fa-bars"></i>
       </div>
-      <!-- Menu -->
+      <!-- Navigation Menu -->
       <ul id="nav-links" class="nav-links">
-        <li><a href="./index.html" target="_blank">Home</a></li>
-        <li><a href="./Menu.html" target="_blank">Menu</a></li>
-        <li><a href="./bitedeals.html" target="_blank">Bite Deals</a></li>
         <li>
-          <a href="./Cart.html" target="_blank">
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./Menu.html">Menu</a>
+        </li>
+        <li>
+          <a href="./bitedeals.html">Bite Deals</a>
+        </li>
+        <li>
+          <a href="./Cart.html">
             <i class="fa-solid fa-cart-plus"></i> Cart
           </a>
         </li>
         <li>
-          <a href="./Login.html" target="_blank"><button id="login-button">
-              <i class="fa-solid fa-right-to-bracket"></i> Login</button>
+          <a href="./Login.html">
+            <button id="login-button">
+              <i class="fa-solid fa-right-to-bracket"></i>
+              Login
+            </button>
           </a>
         </li>
       </ul>
     </nav>
   </header>
 
+
   <!-- Hero Section -->
   <section class="hero-section">
+    <!-- Left Side: Text Content -->
     <div class="hero-content">
-      <h1>Delicious Food Delivered Fast</h1>
-      <p>Order your favorite meals anytime,anywhere.</p>
-      <button id="btn-ordernow">Order Now</button>
+      <span class="hero-tag">
+        <i class="fa-solid fa-utensils"></i>
+        FRESHLY MADE, SPECIALLY FOR YOU
+      </span>
+      <h1>
+        Good Food.<br />
+        <span>Good Mood.</span>
+      </h1>
+      <p>
+        Craving something delicious?
+        Discover your favorite meals and get them delivered
+        fresh and fast, right to your doorstep.
+      </p>
+      <!-- Buttons -->
+      <div class="hero-buttons">
+        <a href="./Menu.html" class="order-btn" id="btn-ordernow">
+          Order Now
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="./bitedeals.html" class="explore-btn">
+          Explore Deals
+        </a>
+      </div>
+      <!-- Small Highlights -->
+      <div class="hero-highlights">
+        <div class="highlight-item">
+          <i class="fa-solid fa-burger"></i>
+          <div>
+            <h4>Fresh Food</h4>
+            <span>Made with love</span>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <i class="fa-solid fa-truck-fast"></i>
+          <div>
+            <h4>Fast Delivery</h4>
+            <span>At your doorstep</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side: Food Image -->
+    <div class="hero-image">
+      <div class="image-circle"></div>
+      <img
+        src="./Images/banner-3.jpg"
+        alt="Delicious food from BiteBox"
+        class="food-image"/>
+      <!-- Floating Offer Card -->
+      <div class="floating-card">
+        <div class="offer-icon">
+          <i class="fa-solid fa-fire"></i>
+        </div>
+        <div>
+          <h4>Made to Crave!</h4>
+          <p>Your favorite bites await.</p>
+        </div>
+      </div>
+      <!-- Decorative Badge -->
+      <div class="food-badge">
+        <i class="fa-solid fa-heart"></i>
+        Made with Love
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="footer-container">
+      <!-- Brand -->
       <div class="footer-box">
         <h2>Bite<span>Box</span></h2>
-        <p>Delicious food delivered to your doorsteps, Fresh, Fast and Tasty!!</p>
+        <p>
+          Delicious food delivered to your doorstep.
+          Fresh, fast and tasty!
+        </p>
       </div>
+      <!-- Quick Links -->
       <div class="footer-box">
         <h3>Quick Links</h3>
-        <ul type="none">
-          <li><a href="./index.html" target="_blank">Home</a></li>
-          <li><a href="./Menu.html" target="_blank">Menu</a></li>
-          <li><a href="./bitedeals.html" target="_blank">Bite Deals</a></li>
-          <li><a href="./Cart.html" target="_blank"> Cart</a></li>
-          <li><a href="./Login.html" target="_blank">Login</a></li>
+        <ul class="footer-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Menu.html">Menu</a></li>
+          <li><a href="./bitedeals.html">Bite Deals</a></li>
+          <li><a href="./Cart.html">Cart</a></li>
+          <li><a href="./Login.html">Login</a></li>
         </ul>
       </div>
+
+      <!-- Contact -->
       <div class="footer-box">
-        <h3>Contact us</h3>
-        <p>Email : support@bitebox.com</p>
-        <p>Phone : +91 9876554326</p>
+        <h3>Contact Us</h3>
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          Email: support@bitebox.com
+        </p>
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          Phone: +91 9876554326
+        </p>
       </div>
+      <!-- Social Media -->
       <div class="footer-box">
-        <h3>Follow us</h3>
+        <h3>Follow Us</h3>
         <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <br>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <br>
-          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
         </div>
       </div>
     </div>
 
+    <!-- Copyright -->
     <div class="footer-bottom">
-      <p>&copy;Copyright : Soniya Kohale 2026 | BiteBox | All Rights Reserved</p>
+      <p>
+        &copy; Copyright : Soniya Kohale 2026 |
+        BiteBox | All Rights Reserved
+      </p>
     </div>
   </footer>
+  <!-- JavaScript -->
   <script src="./JS/Scripts.js"></script>
 </body>
-
 </html>

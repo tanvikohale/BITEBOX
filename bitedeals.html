@@ -1,128 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bite Deals</title>
+    <title>Bite Deals | BiteBox</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
     </style>
     <script
       src="https://kit.fontawesome.com/8553b64424.js"
-      crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="./Bitedeals.css">
-      <link rel="stylesheet" href="./index.css" />
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./Bitedeals.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
 <body>
-  <header>
-    <nav>
-      <div>
-        <!-- This is logo section -->
-        <!-- <h2>Bite<span style="color: red">Box</span></h2> -->
-        <img src="./Images/logo_bb.png" width="150px" height="60px" alt="" />
-      </div>
 
-      </div>
-      <!-- Toggle Button -->
-      <div class="menu-toggle" id="menu-toggle">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <!-- Menu -->
-      <ul id="nav-links" class="nav-links">
-        <li><a href="./index.html" target="_blank">Home</a></li>
-        <li><a href="./Menu.html" target="_blank">Menu</a></li>
-        <li><a href="./bitedeals.html" target="_blank">Bite Deals</a></li>
-        <li>
-          <a href="./Cart.html" target="_blank">
-            <i class="fa-solid fa-cart-plus"></i> Cart
-          </a>
-        </li>
-        <li>
-          <a href="./Login.html" target="_blank"><button id="login-button">
-              <i class="fa-solid fa-right-to-bracket"></i> Login</button>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Today's Offer -->
-     <section class="deals-page">
-      <div class="deals-hero">
-        <h1>Bite Deals</h1>
-        <p>Save more on your favorite bite.</p>
-      </div>
-     </section>
-
-     <!--Today's Combo Offer -->
-     <section class="combo-section">
-      <h2>Today's Combo Offer</h2>
-      <div class="combo-container">
-
-        <div class="combo-card">
-          <img src="./Images/pizza+fries.jpg" alt="">
-          <h3>Golden Corn Pizza + Fries</h3>
-          <p>Perfect Snack Combo</p>
-          <h4><span>₹399</span></h4>
-          <button>Order Now</button>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="./index.html"
+            ><img
+              src="./Images/logo_bb.png"
+              width="150"
+              height="60"
+              alt="BiteBox Logo"
+          /></a>
         </div>
-
-        <div class="combo-card">
-          <img src="./Images/Burger+Coke.jpg" alt="">
-          <h3>Burger + Coke</h3>
-          <p>Perfect Snack Combo</p>
-          <h4><span>₹349</span></h4>
-          <button>Order Now</button>
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
         </div>
-
-        <div class="combo-card">
-          <img src="./Images/Pizza+Garlic.jpg" alt="">
-          <h3>Golden Corn Pizza + Garlic Bread</h3>
-          <p>Perfect Snack Combo</p>
-          <h4><span>₹450</span></h4>
-          <button>Order Now</button>
-        </div>
-
-      </div>
-     </section>
-
-         <footer>
-      <div class="footer-container">
-        <div class="footer-box">
-          <h2>Bite<span>Box</span></h2>
-          <p>Delicious food delivered to your doorsteps, Fresh, Fast and Tasty!!</p>
-        </div>
-        <div class="footer-box">
-          <h3>Quick Links</h3>
-          <ul type="none">
-          <li><a href="./index.html" target="_blank">Home</a></li>
-          <li><a href="./Menu.html" target="_blank">Menu</a></li>
-          <li><a href="./bitedeals.html" target="_blank">Bite Deals</a></li>
-          <li><a href="./Cart.html" target="_blank"> Cart</a></li>
-          <li><a href="./Login.html" target="_blank">Login</a></li>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Menu.html">Menu</a></li>
+          <li><a href="./bitedeals.html">Bite Deals</a></li>
+          <li>
+            <a href="./Cart.html"><i class="fa-solid fa-cart-plus"></i> Cart</a>
+          </li>
+          <li>
+            <a href="./Login.html"
+              ><button id="login-button">
+                <i class="fa-solid fa-right-to-bracket"></i> Login
+              </button></a
+            >
+          </li>
         </ul>
+      </nav>
+    </header>
+
+
+    <section class="deals-page">
+      <div class="deals-hero">
+        <div class="deals-hero-content">
+          <span class="deals-tag"
+            ><i class="fa-solid fa-fire"></i> HOT OFFERS, HAPPY TUMMY</span
+          >
+          <h1>Big Cravings.<br /><span>Small Prices.</span></h1>
+          <p>
+            Your favorite food combos are here! Grab your bites, enjoy more, and
+            save more.
+          </p>
+          <a href="#combo-offers" class="deals-btn"
+            >Explore Deals <i class="fa-solid fa-arrow-right"></i
+          ></a>
         </div>
-        <div class="footer-box">
-          <h3>Contact us</h3>
-          <p>Email : support@bitebox.com</p>
-          <p>Phone : +91 9876554326</p>
-        </div>
-        <div class="footer-box">
-          <h3>Follow us</h3>
-          <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <br>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <br>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <div class="deals-hero-image">
+          <img src="./Images/pizza+fries.jpg" alt="Pizza and fries combo" />
+          <div class="deals-sticker">
+            <i class="fa-solid fa-tag"></i><span>Yummy<br />Combos!</span>
           </div>
         </div>
       </div>
+    </section>
+    <section class="combo-section" id="combo-offers">
+      <div class="section-heading">
+        <span class="section-tag">MADE FOR YOUR CRAVINGS</span>
+        <h2>Today's <span>Combo Offers</span></h2>
+        <p>More deliciousness, more happiness, all in one combo.</p>
+      </div>
+      <div class="combo-container">
+        <div class="combo-card">
+          <div class="combo-image">
+            <img
+              src="./Images/pizza+fries.jpg"
+              alt="Golden corn pizza and fries"
+            />
+            <span class="combo-label"
+              ><i class="fa-solid fa-fire"></i> Popular</span
+            >
+          </div>
+          <div class="combo-details">
+            <div class="combo-rating">
+              <i class="fa-solid fa-star"></i> Customer Favourite
+            </div>
+            <h3>Golden Corn Pizza + Fries</h3>
+            <p>Golden corn pizza paired with crispy, golden fries.</p>
+            <div class="combo-price"><span class="price">₹399</span></div>
+            <a href="./Menu.html" class="combo-order"
+              >Order Now <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="combo-card">
+          <div class="combo-image">
+            <img src="./Images/Burger+Coke.jpg" alt="Burger and Coke combo" />
+            <span class="combo-label">Best Combo</span>
+          </div>
+          <div class="combo-details">
+            <div class="combo-rating">
+              <i class="fa-solid fa-star"></i> Perfect Snack
+            </div>
+            <h3>Burger + Coke</h3>
+            <p>A juicy burger and chilled Coke for the perfect bite.</p>
+            <div class="combo-price"><span class="price">₹349</span></div>
+            <a href="./Menu.html" class="combo-order"
+              >Order Now <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="combo-card">
+          <div class="combo-image">
+            <img
+              src="./Images/Pizza+Garlic.jpg"
+              alt="Golden corn pizza and garlic bread"
+            />
+            <span class="combo-label">Must Try</span>
+          </div>
+          <div class="combo-details">
+            <div class="combo-rating">
+              <i class="fa-solid fa-star"></i> Cheesy Goodness
+            </div>
+            <h3>Golden Corn Pizza + Garlic Bread</h3>
+            <p>Delicious pizza with warm, crispy garlic bread.</p>
+            <div class="combo-price"><span class="price">₹450</span></div>
+            <a href="./Menu.html" class="combo-order"
+              >Order Now <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="deals-bottom">
+        <i class="fa-solid fa-heart"></i>
+        <p>Good food tastes even better when you share it!</p>
+      </div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-box">
+          <h2>Bite<span>Box</span></h2>
+          <p>
+            Delicious food delivered to your doorstep. Fresh, fast and tasty!
+          </p>
+        </div>
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Menu.html">Menu</a></li>
+            <li><a href="./bitedeals.html">Bite Deals</a></li>
+            <li><a href="./Cart.html">Cart</a></li>
+            <li><a href="./Login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <h3>Contact Us</h3>
+          <p><i class="fa-solid fa-envelope"></i> Email: support@bitebox.com</p>
+          <p><i class="fa-solid fa-phone"></i> Phone: +91 9876554326</p>
+        </div>
+        <div class="footer-box">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" aria-label="WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
       <div class="footer-bottom">
-        <p>&copy;Copyright : Soniya Kohale 2026 | BiteBox | All Rights Reserved</p>
+        <p>
+          &copy; Copyright : Soniya Kohale 2026 | BiteBox | All Rights Reserved
+        </p>
       </div>
     </footer>
-      <script src="./JS/Scripts.js"></script>
-</body>
+    <script src="./JS/Scripts.js"></script>
+  </body>
 </html>

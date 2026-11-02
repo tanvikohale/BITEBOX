@@ -1,72 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login Page</title>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-  </style>
-  <script src="https://kit.fontawesome.com/8553b64424.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./index.css" />
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BiteBox | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8553b64424.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+<!-- Header -->
   <header>
     <nav>
-      <div>
-        <!-- This is logo section -->
-        <!-- <h2>Bite<span style="color: red">Box</span></h2> -->
-        <img src="./Images/logo_bb.png" width="150px" height="60px" alt="" />
+      <!-- Logo -->
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./Images/logo_bb.png" width="10" height="80" alt="BiteBox Logo" />
+        </a>
       </div>
-
-      </div>
-      <!-- Toggle Button -->
+      <!-- Mobile Toggle Button -->
       <div class="menu-toggle" id="menu-toggle">
         <i class="fa-solid fa-bars"></i>
       </div>
-      <!-- Menu -->
+      <!-- Navigation Menu -->
       <ul id="nav-links" class="nav-links">
-        <li><a href="./index.html" target="_blank">Home</a></li>
-        <li><a href="./Menu.html" target="_blank">Menu</a></li>
-        <li><a href="./bitedeals.html" target="_blank">Bite Deals</a></li>
         <li>
-          <a href="./Cart.html" target="_blank">
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./Menu.html">Menu</a>
+        </li>
+        <li>
+          <a href="./bitedeals.html">Bite Deals</a>
+        </li>
+        <li>
+          <a href="./Cart.html">
             <i class="fa-solid fa-cart-plus"></i> Cart
           </a>
         </li>
         <li>
-          <a href="./Login.html" target="_blank"><button id="login-button">
-              <i class="fa-solid fa-right-to-bracket"></i> Login</button>
+          <a href="./Login.html">
+            <button id="login-button">
+              <i class="fa-solid fa-right-to-bracket"></i>
+              Login
+            </button>
           </a>
         </li>
       </ul>
     </nav>
   </header>
-  <!-- Login Form -->
-  <section class="auth-container">
-    <div class="auth-box">
-      <form action="">
-        <h2>Login to Bite<span>Box</span></h2>
-        <input type="email" id="email" placeholder="Enter Email" required>
-        <div style="position: relative;">
-          <input type="password" id="password" placeholder="Enter password" required>
-          <span onclick="showPass()"
-            style="position: absolute; right: 10px; top: 30px; transform: translateY(-50%); cursor: pointer;">
-            <i class="fa-solid fa-eye"></i></span>
+
+    <!-- Login Main Section -->
+    <main class="auth-page">
+      <div class="auth-card">
+        <div class="auth-visual">
+          <div class="visual-content">
+            <span class="visual-tag">WELCOME TO BITEBOX</span>
+            <h1>Good Food.<br /><span>Good Mood.</span></h1>
+            <p>
+              Your favourite meals, your favourite flavours. Let's get you
+              something delicious!
+            </p>
+            <div class="visual-features">
+              <p><i class="fa-solid fa-burger"></i> Delicious food</p>
+              <p><i class="fa-solid fa-truck-fast"></i> Quick service</p>
+              <p><i class="fa-solid fa-heart"></i> Made with love</p>
+            </div>
+          </div>
         </div>
-        <button type="button" onclick="login()">LogIn</button>
-        <p><a href="./Sign-Up.html">Forget Password</a></p>
-        <p>Don't have an accout
-          <a href="./Sign-Up.html">SignUp</a>
+        <div class="auth-form">
+          <div class="form-icon"><i class="fa-solid fa-user"></i></div>
+          <h2>Welcome <span>Back!</span></h2>
+          <p class="form-description">Login to your BiteBox account</p>
+          <form
+            id="login-form"
+            onsubmit="
+              event.preventDefault();
+              login();
+            "
+          >
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <div class="input-wrap">
+                <i class="fa-regular fa-envelope"></i>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-lock"></i>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Enter your password"
+                  required
+                />
+                <button
+                  type="button"
+                  class="eye-btn"
+                  onclick="showPass()"
+                  aria-label="Show or hide password"
+                >
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="forgot-link">
+              <a href="./Sign-Up.html">Forgot Password?</a>
+            </div>
+            <button type="submit" class="auth-submit">
+              Login <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <p id="error" class="form-error" role="alert"></p>
+          </form>
+          <div class="form-divider"><span>NEW TO BITEBOX?</span></div>
+          <p class="switch-text">
+            Don't have an account? <a href="./Sign-Up.html">Create Account</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <!-- Brand -->
+      <div class="footer-box">
+        <h2>Bite<span>Box</span></h2>
+        <p>
+          Delicious food delivered to your doorstep.
+          Fresh, fast and tasty!
         </p>
-        <p id="error" style="color: red;"></p>
-      </form>
+      </div>
+      <!-- Quick Links -->
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Menu.html">Menu</a></li>
+          <li><a href="./bitedeals.html">Bite Deals</a></li>
+          <li><a href="./Cart.html">Cart</a></li>
+          <li><a href="./Login.html">Login</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-box">
+        <h3>Contact Us</h3>
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          Email: support@bitebox.com
+        </p>
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          Phone: +91 9876554326
+        </p>
+      </div>
+      <!-- Social Media -->
+      <div class="footer-box">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
     </div>
-  </section>
 
-  <script src="./JS/Scripts.js"></script>
-</body>
-
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>
+        &copy; Copyright : Soniya Kohale 2026 |
+        BiteBox | All Rights Reserved
+      </p>
+    </div>
+  </footer>
+    <script src="./JS/Scripts.js"></script>
+  </body>
 </html>
